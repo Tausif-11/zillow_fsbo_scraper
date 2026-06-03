@@ -1,0 +1,16 @@
+# Cache structures
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local Virtual Environments
+venv/
+ENV/
+.env
+
+# Data Output Folders
+exports/*.csv
+exports/*.xlsx
+
+# Private App Configurations
+config.py
