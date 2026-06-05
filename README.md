@@ -20,15 +20,25 @@ An industrial-grade, high-performance asynchronous web scraping pipeline enginee
 ```text
 zillow_fsbo_scraper/
 │
-├── exports/                 # Local data target storage outputs (Git ignored)
+├── .github/
+│   └── workflows/
+│       └── python-app.yml       # Production CI/CD workflow validation automation
+│
+├── exports/                     # Local extracted data targets folder (Git ignored)
 │   ├── zillow_fsbo_leads.csv
 │   └── zillow_fsbo_leads.xlsx
 │
-├── config.py                # Secret active browser headers & cookie maps (Git ignored)
-├── config.example.py        # Blank template for production workspace replication
-├── main.py                  # Core execution loops, timing profiles & pipeline flow control
-├── scraper.py               # Network transport configuration and target API requests
-├── pipeline.py              # Parsing rules, data transformation, and openpyxl styling
-├── requirements.txt         # Automated package install definitions
-├── .gitignore               # System pattern security tracking definitions
-└── LICENSE                  # Legal MIT distribution permissions framework
+├── venv/                        # Local Python Virtual Environment folder (Git ignored)
+│
+├── .gitignore                   # System filter rules file ensuring credential secrecy
+├── LICENSE                      # Clear MIT Legal Permissions framework file
+├── README.md                    # Professional Markdown portfolio documentation file
+├── test_pipeline.py             # Automated data integrity unit tests for GitHub Actions
+│
+├── main.py                      # Master script execution loops, logic, and timers
+├── scraper.py                   # Network transport configuration engine (`tls_client`)
+├── pipeline.py                  # Parsing layer, regex split-routing & openpyxl styling
+│
+├── config.py                    # Private cookies, active tokens, and target headers (Git ignored)
+├── config.example.py            # Public placeholder blueprint for production cloning
+└── requirements.txt             # Third-party module installation tracking index
